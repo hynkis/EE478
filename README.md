@@ -19,7 +19,7 @@ KAIST EE478 Introduction to Multidisciplinary Robotics.
 
 
 # Week 7 - GAZEBO Simulation and Control
-[Lecture Note Week7](https://www.dropbox.com/s/hzwp2iy85ipw09m/wk4_Robotics_Operating_System.pdf?dl=0)
+[Lecture Note Week7](https://www.dropbox.com/s/nmteonhuxh2sg36/wk7_px4_gazebo_simulation.pdf?dl=0)
 - PX4 GAZEBO Simulator
 - MAVLINK and MAVROS
 - Controllers
