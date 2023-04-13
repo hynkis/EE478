@@ -1,0 +1,4 @@
+<launch>
+    <!-- Run waypoint_mission_node -->
+    <node name="waypoint_mission_node" pkg="waypoint_mission" type="waypoint_mission.py" output="screen"/>
+</launch>

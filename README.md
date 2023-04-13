@@ -16,3 +16,13 @@ KAIST EE478 Introduction to Multidisciplinary Robotics.
 - ROS Programming
 - Assignment 1: Simple ROS topic publisher & subscriber
 - Appendix (ROS Tools, ROS Messages)
+
+
+# Week 7 - GAZEBO Simulation and Control
+[Lecture Note Week7](https://www.dropbox.com/s/hzwp2iy85ipw09m/wk4_Robotics_Operating_System.pdf?dl=0)
+- PX4 GAZEBO Simulator
+- MAVLINK and MAVROS
+- Controllers
+- PX4 Simulator installation
+- Controlling simulated drone using MAVROS
+- Assignment 2: Simulation environment setting and waypoint control
