@@ -5,28 +5,32 @@ from std_srvs.srv import Empty, EmptyResponse
 from geometry_msgs.msg import Point
 
 # Waypoints [[X list], [Y list], [Z list]]
-waypoint_list = [[ ], \
-                [ ], \
-                [ ]]
+waypoint_list = [[1, 2, 3], \
+                [1, 2, 3], \
+                [1, 2, 3]]
 
 class WaypointMission:
     def __init__(self):
         self.cur_waypoint_idx = -1
         self.cur_waypoint = Point()
 
-        self.waypoint_server = rospy.Service("waypoint_mission_server", Empty, self.waypoint_service)
-        self.waypoint_pub = rospy.Publisher("waypoint_mission", Point, queue_size = 10)
+        self.waypoint_server = rospy.Service("request_next_waypoint", Empty, self.waypoint_service)
+        self.waypoint_pub = rospy.Publisher("waypoint_manager_target", Point, queue_size = 10)
         # self.cur_position_sub = rospy.Subscriber("cur_position", , self.auto_arrive_checker_cb, queue_size=1)
+
+        rospy.loginfo("Waypoint mission manager is now avilable!")
+
+        # Initialize target waypoint to first waypoint
+        self.get_next_waypoint()
 
     def waypoint_service(self, req):
         if(self.get_next_waypoint()):
             rospy.loginfo("Waypoint updated")
         else:
-            rospy.loginfo("Waypoint update failed")
+            rospy.logerr("Waypoint update failed")
         return EmptyResponse()
     
     def get_next_waypoint(self):
-        print(len(waypoint_list[0]))
         if(self.cur_waypoint_idx < len(waypoint_list[0]) - 1):
             self.cur_waypoint_idx = self.cur_waypoint_idx + 1
 
@@ -41,7 +45,9 @@ class WaypointMission:
         return True
     
     # def auto_arrive_checker_cb():
+        # dist calc_dist(cur_waypoint, cur_drone_pose)
         # if(dist < threshold)
+        #   get_next_waypoint()
         # TODO Optionally
         
     def run(self):
