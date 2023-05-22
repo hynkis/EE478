@@ -41,3 +41,13 @@ KAIST EE478 Introduction to Multidisciplinary Robotics.
 - Drone Hardware Configuration
 - Wiring Diagram & Cable & Soldering
 
+# Week 13 - Software Configuration for the Drone Platform
+[Lecture Note Week 13](https://www.dropbox.com/s/8gh0lt9udmqhb00/wk13_software_configuration.pdf?dl=0)
+- Software Architecture
+- Setting up the Jetson Xavier NX
+- Installation of the Sensor Interface (RealsenseD435)
+- Installation of the Control Interface (MAVROS)
+- Perception: Pose Estimation (PoseNet) (will be handled in next TA session!)
+- Perception: Visual Odometry (ORB-SLAM)
+- Mission Planning & Velocity Control
+
