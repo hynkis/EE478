@@ -41,6 +41,7 @@ KAIST EE478 Introduction to Multidisciplinary Robotics.
 - Drone Hardware Configuration
 - Wiring Diagram & Cable & Soldering
 
+
 # Week 13 - Software Configuration for the Drone Platform
 [Lecture Note Week 13](https://www.dropbox.com/s/8gh0lt9udmqhb00/wk13_software_configuration.pdf?dl=0)
 - Software Architecture
@@ -50,4 +51,14 @@ KAIST EE478 Introduction to Multidisciplinary Robotics.
 - Perception: Pose Estimation (PoseNet) (will be handled in next TA session!)
 - Perception: Visual Odometry (ORB-SLAM)
 - Mission Planning & Velocity Control
+
+
+# Week 14 - Software Configuration & Demo for the Selfie Drone
+[Lecture Note Week 14](https://www.dropbox.com/s/69hg2xjhwqm20fb/wk14_software_configuration_demo.pdf?dl=0)
+- Perception: Pose Estimation (PoseNet)
+- Integration for the Selfie Drone
+- Appendix:
+  - Overclock Settings for the Jetson Xavier NX
+  - Issues of ORB-SLAM
+
 
